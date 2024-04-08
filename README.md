@@ -1,27 +1,28 @@
-# 101296633COMP3133Assignment2
+## Developer Notes
+**2024/02/19**<br>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+Hello Ryan here! This was my second time working with GraphQL and it was alot to learn. Will definantly revisit this project and make imporvments for learning/ experience purposes.<br>
 
-## Development server
+Unfortunatly I wasn't able to implement the signup and login features, but I was able to implement all GraphQL API calls and store them into my mongoDB database! Here is an example of my generating a User & having their password censored for security purposes
+<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Create User**
 
-## Code scaffolding
+![createUser Mutation using GraphQL](/screenshots/createUser.JPG)
+<br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Display All Users**
 
-## Build
+![Get Request of all users in the database](./screenshots/getUsers.JPG)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<br>
 
-## Running unit tests
+I was also able to connect my mongoDb cluster and create models/schemas for the respective JSON data to be transfered into collections.
+![mongoDB Database & collections](./screenshots/mongodb_database_collections.JPG)
+![mongodb Users collection](./screenshots/mongodb_users_collection.JPG)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+I was able to make a front-end component form page for login, signup and a dashboard that was able to display all users using the getUsers() function from my angular project (Assignment1)
 
-## Running end-to-end tests
+![Angular Front-end login component](./screenshots/login-component.PNG)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Angular Front-end sign-up component](./screenshots/signup-component.PNG)
